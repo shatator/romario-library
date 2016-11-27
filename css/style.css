@@ -1,0 +1,113 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+
+.wrapper {
+	width: 1025px;
+	margin: 0 auto;
+}
+
+.header {
+	background-color: #4CCEC0;
+	display: inline-block;
+	width: 100%;
+	border-radius: 0 0 30px 30px;
+	margin-bottom: 10px;
+	color: white;
+	border: 1px solid gray;
+	border-top: 0;
+	text-align: center;
+	padding: 10px;
+	font-size: 40px;
+	font-style: italic;
+}
+
+.menu {
+	display: inline-block;
+	background-color: #4CCEC0;
+	height: 100px;
+	border-radius: 30px;
+	vertical-align: top;
+	color: white;
+	padding: 10px;
+	border: 1px solid gray;
+	margin-right: 10px;
+	text-align: center;
+	font-size: 22px;
+	font-style: italic;
+}
+
+.menu table {
+	color: black;
+	text-align: left;
+	font-size: 17px;
+	font-style: normal;
+}
+
+.content {
+	display: inline-block;
+}
+
+.content table {
+	border-collapse: collapse;
+}
+
+.content table tr:hover
+				 :not(th){
+	background-color: #A9EBE4;
+	cursor: pointer;
+}
+
+.content table th {
+	border: 1px solid black;
+}
+
+.content table td {
+	border: 1px solid black;
+	padding: 3px;
+}
+
+.form-update {
+	background-color: #4CCEC0;
+	display: none;
+	width: 400px;
+	height: 200px;
+	border-radius: 10px;
+	position: absolute;
+	border: 1px solid gray;
+	left: 40%;
+	top: 40%;
+	padding: 10px;
+}
+
+.form-update  span {
+	font-size: 20px;
+	margin: 0 0 0 10px;
+}
+
+.form-update > span {
+	color: white;
+	font-size: 30px;
+	font-style: italic;
+	margin: 0 0 0 20px;
+}
+
+img[alt="Exit"] {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+}
+
+img[alt="Exit"]:hover {
+	cursor: pointer;
+}
+
+.form-update input[type="text"]{
+	margin: 10px 0;
+	width: 270px;
+}
+
+.form-update input[name="number"] {
+	width: 60px;
+}
