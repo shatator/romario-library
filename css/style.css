@@ -26,7 +26,7 @@ body {
 .menu {
 	display: inline-block;
 	background-color: #4CCEC0;
-	height: 100px;
+	height: auto;
 	border-radius: 30px;
 	vertical-align: top;
 	color: white;
@@ -72,7 +72,7 @@ body {
 	background-color: #4CCEC0;
 	display: none;
 	width: 400px;
-	height: 200px;
+	height: auto;
 	border-radius: 10px;
 	position: absolute;
 	border: 1px solid gray;
