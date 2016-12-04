@@ -17,7 +17,20 @@
 			<table>
 				<tr>
 					<td>Автор</td>
-					<td><input type="text" name="ins_author[]"></td>
+					<td>
+						<input type="text" name="ins_author[]" list="variants">
+						<datalist id="variants">
+							<?php
+								$db=mysqli_connect("localhost", "root", "", "library");
+								mysqli_set_charset($db, "utf8");
+								$result = mysqli_query($db, "SELECT * FROM `authors`");
+								while($row = mysqli_fetch_assoc($result)){
+									$author = $row['name'];		
+									echo "<option>$author</option>";
+								}
+							?>
+						</datalist>
+					</td>
 				</tr>
 				<tr>
 					<td></td><td><input type="button" name="author_plus" value="+"></td>
@@ -40,7 +53,7 @@
 				<th>Автор</th>
 			</tr>
 			<?php
-				$db=mysqli_connect("localhost", "u800658878_root", "qwaszxedc4321", "u800658878_bd");		//подключение к бд
+				$db=mysqli_connect("localhost", "root", "", "library");		//подключение к бд
 				mysqli_set_charset($db, "utf8");							//задаем кодировку
 				$result = mysqli_query($db, "SELECT * FROM `books`");		//выбираем таблицу с книгами books
 				while($row = mysqli_fetch_assoc($result)){					//запускаем цикл по строкам таблицы books
