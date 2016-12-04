@@ -1,0 +1,251 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+	font-family: "Uni Sans";
+	src: url("fonts/Uni Sans Thin.otf");
+}
+
+header {
+	display: inline-block;
+	width: 100%;
+	min-width: 520px;
+	height: 440px;
+	padding-top: 150px;
+	background: url(image/header_bottom.png) bottom no-repeat,
+				url(image/header-back.jpg) center no-repeat;
+	color: white;
+	text-align: center;
+}
+
+header span:first-child {
+	font-family: "Uni Sans";
+	text-shadow: 0 1.4px 5px black;
+	font-size: 120px;
+}
+
+header span:last-child {
+	font-family: sans-serif;
+	font-weight: 600;
+	font-size: 31px;
+}
+
+.properties ul {
+	list-style: none;
+	margin: 160px 0 150px 0;
+	text-align: center;
+	min-width: 520px;
+}
+
+.properties li {
+	display: inline-block;
+	position: relative;
+	height: 240px;
+	width: 230px;
+	vertical-align: top;
+	text-align: center;
+	margin: 0 0 20px 0;
+	font-family: sans-serif;
+	color: #3F4F53;
+}
+
+.properties li span {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: inherit;
+	font-size: 18.5px;
+}
+
+.result {
+	display: inline-block;
+	background-color: #FFD755;
+	width: 100%;
+	min-width: 520px;
+	text-align: center;
+	color: #2B3B43;
+}
+
+.result span:first-child {
+	display: inline-block;
+	margin-top: 80px;
+	font-size: 33px;
+	font-weight: bold;
+	font-family: sans-serif;
+	margin-bottom: 80px;
+}
+
+.result ul {
+	list-style: none;
+}
+
+.result li {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	height: 340px;
+	width: 275px;
+	margin-bottom: 20px;
+	font-weight: bold;
+	font-size: 24px;
+	font-family: sans-serif;
+}
+
+.result li img {
+	margin-bottom: 26px;
+}
+
+.result li span:last-child {
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: inherit;
+	font-size: 22px;
+	color: #3F4F53;
+	font-weight: normal;
+	text-align: center;
+}
+
+p {
+	font-size: 22px;
+	color: #3F4F53;
+	font-weight: normal;
+}
+
+.result li img[alt="Line"] {
+	position: absolute;
+	left: 15px;
+	bottom: 40px;
+}
+
+.set-design {
+	text-align: center;
+	margin: 132px 0 100px 0;
+	min-width: 520px;
+}
+
+.set-design > img, .desc {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.set-design > img {
+	box-shadow: 0px 1px 20px lightgray;
+	margin-bottom: 20px;
+}
+
+.desc {
+	padding: 30px;
+	font-family: sans-serif;
+	color: #3F4F53;
+	text-align: left;
+}
+
+.desc span {
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+	margin-left: 25px;
+	font-size: 30px;
+	line-height: 40px;
+}
+
+.desc span:last-child {
+	font-size: 18.5px;
+	line-height: 20px;	
+	margin-left: 80px;
+}
+
+.addition {
+	width: 100%;
+	min-width: 520px;
+	background: url(image/header_bottom.png) bottom no-repeat,
+                     	linear-gradient(to top, #f0f0f0, #f3f3f3);
+	text-align: center;
+	color: #3F4F53;
+	padding: 60px 0 30px 0;
+}
+
+.addition ul {
+	list-style: none;
+}
+
+.addition li {
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+	width: 380px;
+	margin: 0 0 20px 0;
+	font-family: sans-serif;
+}
+
+.addition li img,
+.addition li span,
+.addition li p {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.addition li img {
+	display: block;
+	float: left;
+	margin: 0 35px 50px 0;
+	clear: both;
+}
+
+.addition li p {
+	font-size: 18px;
+}
+
+.addition li span {
+	font-size: 32px;
+}
+
+.partners {
+	height: 330px;
+	text-align: center;
+	color: #2B3B43;
+	padding-top: 105px;
+	min-width: 520px;
+}
+
+.partners > span {
+	height: 450px;
+	font-size: 32px;
+	font-family: sans-serif;
+}
+
+.partners ul {
+	list-style: none;
+	margin-top: 90px;
+}
+
+.partners li {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 0px 20px 0;
+	width: 240px;
+}
+
+.partners li img {
+	height: 35px;
+}
+
+.footer {
+	display: block;
+	clear: both;
+	background: #f0f0f0;
+	text-align: center;
+	padding: 30px 0 50px 0;
+	min-width: 520px;
+}
+
+.footer img,
+.footer span {
+	display: inline-block;
+	vertical-align: middle;
+}
