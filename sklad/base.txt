@@ -1,0 +1,3 @@
+1|Apple|Iphone 7|70000|5
+2|Samsung|Sasung Galaxy Note 2|30000|2
+3|Sony|Sony Xperia ZL|15000|0

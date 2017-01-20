@@ -1,27 +1,32 @@
 $(function(){
 	var $table_string = $(".content table"),						//строки таблицы
-		$form_update = $(".form-update"),							//блок формы правки и удаления
+		$form_update = $(".form-update "),							//блок формы правки и удаления
 		$button_exit_form = $(".form-update img[alt='Exit']"),		//кнопка выхода на форме
-		$form_insert = $("form[name='form_insert']"),				//форма добавления
-		$form_ins_table = $("form[name='form_insert'] table"),		//таблица формы добавления
-		max_col_authors = 4;										//максимальное количество автором для одной книги
+		$form_insert = $(".menu form[name='form_insert']");			//форма добавления
 
-	$table_string.on('click', 'tr:not(:first)',function(){						//при нажатии на строку таблицы
+	$table_string.on('click', 'tr:not(:first-child)',function(){				//при нажатии на строку таблицы
 		$form_update.css("display", "block");									//показать форму
 		$("input[name='number']")[0].value = this.cells[0].textContent;			//значения строки присваиваются текстовым полям на форме
-		$("input[name='book-title']")[0].value = this.cells[1].textContent;
+		$("input[name='book-author']")[0].value = this.cells[1].textContent;
+		$("input[name='book-title']")[0].value = this.cells[2].textContent;
+	});
+
+	$form_insert.on('submit', function(){							//при submit формы добавления
+		if ($("input[name='ins_author']")[0].value != ""){
+			if ($("input[name='ins_book']")[0].value != ""){
+				return true;
+			}
+			else{
+				return false;										//простая проверка заполнения форы добавления
+			}
+		}
+		else{
+			return false;
+		}
 	});
 
 	$button_exit_form.on('click', function(){						//при нажатии кнопки выхода на форме праавки
 		$(this).parent().css("display", "none");					//скрыть форму
 	});
 
-	var author_plus_count=1;
-	$('input[name=author_plus]').on('click', function(){
-		author_plus_count++;
-		$("<tr><td>Соавтор</td><td><input type='text' name='ins_author[]' list='variants'></td></tr>").insertAfter($("form[name='form_insert'] tr:first"));
-		if (author_plus_count >= max_col_authors){
-			$("input[name='author_plus']").css('display', 'none');
-		}
-	});
 });
