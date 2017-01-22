@@ -27,13 +27,13 @@
 			</tr>";
 	}
 			
-	echo "	<tfoot>
+	echo "  </tbody>
+			<tfoot>
 				<tr>
 					<td colspan=3>Итого:</td>
 					<td>".$sum_price."</td>
 					<td>".$sum_col."</td>
 				</tr>
 			</tfoot>
-		</tbody>
 		</table>";
 ?>
